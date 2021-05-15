@@ -61,13 +61,11 @@ def main():
         import calendar
         from ics import Calendar, Event
         final = str(year) + "-" +str(month) + "-" +str(day) + " 00:00:00"
-        print(final)
         c = Calendar()
         e = Event()
         e.name = "Mood of your child today:"
         e.begin = final
         c.events.add(e)
-        c.events
         with open('my.ics', 'w') as my_file:
             my_file.writelines(c)
         import smtplib
