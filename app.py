@@ -10,7 +10,7 @@ import pickle
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegressionCV
-Data=pd.read_csv("studentbehaviour_Anomaly/edu1.csv")
+Data=pd.read_csv("edu1.csv")
 
 
 
